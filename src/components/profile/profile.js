@@ -6,7 +6,7 @@ const Profile = () => {
         <>
             <div className="py-5 flex justify-center">
                 <div className="w-4/5 flex justify-center px-3">
-                    <img src="https://i.insider.com/63d93b280a08ae0018a62b4f?width=700" className="w-2/5 h-auto" />
+                    <img src="https://i.insider.com/63d93b280a08ae0018a62b4f?width=700" className="w-2/5 rounded-full h-auto" />
                 </div>
             </div>
             <div className="pb-5 flex justify-center">
