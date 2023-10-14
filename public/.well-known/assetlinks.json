@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.netlify.luia.twa",
+        "sha256_cert_fingerprints": ["27:B4:FB:26:E8:4A:F1:1F:2B:C9:DF:FC:07:E3:7B:16:10:5C:4E:83:BF:0B:60:5E:7B:BC:12:0C:7B:1C:4F:84"]
+      }
+    }]
