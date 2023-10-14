@@ -41,7 +41,7 @@ const Home = () => {
 
     return (
         <>
-            <div id="header" className="flex py-8 sm:py-16 justify-evenly overflow-x-auto">
+            <div id="header" className="flex pt-16 pb-8 sm:py-16 justify-evenly overflow-x-auto">
                 <button onClick={mostrarCourses} className="px-4 py-2 mx-2 rounded-full bg-white border-2 border-purple-600 text-purple-600 font-semibold">Courses</button>
                 <button onClick={mostrarFeed} className="px-4 py-2 mx-2 rounded-full bg-white border-2 border-purple-600 text-purple-600 font-semibold">Feed</button>
                 <button onClick={mostrarLuia} className="px-4 py-2 mx-2 rounded-full bg-white border-2 border-purple-600 text-purple-600 font-semibold">LuIA</button>
