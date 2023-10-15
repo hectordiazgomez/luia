@@ -3,6 +3,6 @@
       "target": {
         "namespace": "android_app",
         "package_name": "app.netlify.luia.twa",
-        "sha256_cert_fingerprints": ["27:B4:FB:26:E8:4A:F1:1F:2B:C9:DF:FC:07:E3:7B:16:10:5C:4E:83:BF:0B:60:5E:7B:BC:12:0C:7B:1C:4F:84"]
+        "sha256_cert_fingerprints": ["2D:5F:3D:B5:64:BC:E8:69:CA:86:EC:5D:6D:3F:94:0B:A4:D0:96:80:10:9E:07:55:0D:8D:94:0E:39:8D:25:E9"]
       }
     }]
