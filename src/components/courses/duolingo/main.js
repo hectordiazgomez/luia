@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { PencilAltIcon, ChatIcon } from "@heroicons/react/solid";
+import { PencilAltIcon, ChatIcon, PlayIcon, SpeakerphoneIcon, BookOpenIcon, LightningBoltIcon, PhotographIcon, SparklesIcon } from "@heroicons/react/solid";
 import {Link} from "react-router-dom"
 
 const Main = () => {
@@ -9,9 +9,9 @@ const Main = () => {
                 <p className="px-3 font-semibold text-lg text-blue-700">Improve your skills</p>
             </div>
             <div className="">
-                <Link to="/" className="flex px-3 pb-5"><div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
+                <Link to="/lectures" className="flex px-3 pb-5"><div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
                     <div className="w-1/5 flex justify-center">
-                        <PencilAltIcon className="w-5 h-auto text-blue-700" />
+                        <PlayIcon className="w-5 h-auto text-blue-700" />
                     </div>
                     <div className="w-4/5">
                         <p className="text-gray-600 font-semibold ml-1">Lectures</p>
@@ -22,7 +22,7 @@ const Main = () => {
             <div className="">
                 <Link className="flex px-3 pb-5" to="/listening"><div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
                     <div className="w-1/5 flex justify-center">
-                        <PencilAltIcon className="w-5 h-auto text-blue-700" />
+                        <SpeakerphoneIcon className="w-5 h-auto text-blue-700" />
                     </div>
                     <div className="w-4/5">
                         <p className="text-gray-600 font-semibold ml-1">Listening</p>
@@ -30,49 +30,60 @@ const Main = () => {
                     </div>
                 </div></Link>
             </div>
-            <div className="flex px-3 pb-5">
-                <div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
+            <div className="">
+                <Link className="flex px-3 pb-5" to="/describe"><div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
                     <div className="w-1/5 flex justify-center">
-                        <ChatIcon className="w-5 h-auto text-blue-700" />
+                        <PhotographIcon className="w-5 h-auto text-blue-700" />
+                    </div>
+                    <div className="w-4/5">
+                        <p className="text-gray-600 font-semibold ml-1">Writing</p>
+                        <p className="text-gray-500 ml-1 text-sm mt-1">Describe an image</p>
+                    </div>
+                </div></Link>
+            </div>
+            <div className="">
+                <Link to="/writing" className="flex px-3 pb-5"><div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
+                    <div className="w-1/5 flex justify-center">
+                        <PencilAltIcon className="w-5 h-auto text-blue-700" />
                     </div>
                     <div className="w-4/5">
                         <p className="text-gray-600 font-semibold ml-1">Writing</p>
                         <p className="text-gray-500 ml-1 text-sm mt-1">Answer the prompt</p>
                     </div>
-                </div>
+                </div></Link>
             </div>
-            <div className="flex px-3 pb-5">
-                <div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
+            <div className="">
+                <Link to="/vocabulary" className="flex px-3 pb-5"><div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
                     <div className="w-1/5 flex justify-center">
-                        <PencilAltIcon className="w-5 h-auto text-blue-700" />
+                        <BookOpenIcon className="w-5 h-auto text-blue-700" />
                     </div>
                     <div className="w-4/5">
                         <p className="text-gray-600 font-semibold ml-1">Vocabulary</p>
                         <p className="text-gray-500 ml-1 text-sm mt-1">Record yourself</p>
                     </div>
-                </div>
+                </div></Link>
             </div>
-            <div className="flex px-3 pb-5">
-                <div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
+            <div className="">
+                <Link to="/luia" className="flex px-3 pb-5"><div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
                     <div className="w-1/5 flex justify-center">
-                        <PencilAltIcon className="w-5 h-auto text-blue-700" />
+                        <SparklesIcon className="w-5 h-auto text-blue-700" />
                     </div>
                     <div className="w-4/5">
                         <p className="text-gray-600 font-semibold ml-1">LuIA</p>
                         <p className="text-gray-500 ml-1 text-sm mt-1">AI generated promtps</p>
                     </div>
-                </div>
+                </div></Link>
             </div>
-            <div className="flex px-3 pb-5">
-                <div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
+            <div className="">
+                <Link to="/interactive" className="flex px-3 pb-5"><div className="border bg-gray-100 p-3 flex w-4/5 border-gray-100 shadow-3xl rounded-lg">
                     <div className="w-1/5 flex justify-center">
-                        <ChatIcon className="w-5 h-auto text-blue-700" />
+                        <LightningBoltIcon className="w-5 h-auto text-blue-700" />
                     </div>
                     <div className="w-4/5">
                         <p className="text-gray-600 font-semibold ml-1">Interactive reading</p>
                         <p className="text-gray-500 ml-1 text-sm mt-1">Answer questions from texts</p>
                     </div>
-                </div>
+                </div></Link>
             </div>
         </>
     )
